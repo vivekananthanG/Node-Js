@@ -7,8 +7,8 @@ import {MongoClient} from "mongodb"; //"type" :"module"
 dotenv.config();
 //console.log(process.env);
 const app = express();
-const port = 9000;
-
+//const port = 9000;
+const port=process.env.PORT;
 const movies=[
     {
       id: "100",
